@@ -14,7 +14,6 @@
             android:summary="%s"
             android:title="@string/settings_release_type"
             app:useStockLayout="true"/>
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -72,6 +71,10 @@
             android:title="@string/open_drawer"/>
         -->
 
+        <CheckBoxPreference
+            android:key="ignore_chinese"
+            android:summary="@string/ignore_chinese_summary"
+            android:title="@string/ignore_chinese"/>
     </PreferenceCategory>
 
     <PreferenceCategory

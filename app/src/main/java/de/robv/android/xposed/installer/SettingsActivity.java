@@ -128,7 +128,7 @@ public class SettingsActivity extends XposedBaseActivity implements FolderChoose
 
         @Override
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-            if (key.equals("theme")) getActivity().recreate();
+            if (key.equals("theme") || key.equals("ignore_chinese")) getActivity().recreate();
         }
 
         @Override
